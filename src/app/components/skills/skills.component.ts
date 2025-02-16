@@ -42,7 +42,9 @@ export class SkillsComponent {
         { name: 'Git', color: '#F05032', svg: 'https://cdn.simpleicons.org/git' },
         { name: 'GitHub', color: '#181717', svg: 'https://cdn.simpleicons.org/github' },
         { name: 'Linux', color: '#E95420', svg: 'https://cdn.simpleicons.org/linux/black' },
-        { name: 'Ubuntu', color: '#00A4EF', svg: 'https://cdn.simpleicons.org/ubuntu' }
+        { name: 'Ubuntu', color: '#00A4EF', svg: 'https://cdn.simpleicons.org/ubuntu' },
+        { name: 'npm', color: '#CB3837', svg: 'https://cdn.simpleicons.org/npm' },
+        { name: 'Bun', color: '#18181B', svg: 'https://cdn.simpleicons.org/bun/hotpink'}
       ]
     }
   ]
