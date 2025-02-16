@@ -9,11 +9,14 @@ html{
 body {
     background-color: #ffffff;
     color: #000000;
-  }
+}
+
+body nav a svg{
+  fill: black;
+}
   
 body.dark-mode {
-    background-color: #0F0F11;
-    color: white;
+  @apply bg-[#0F0F11] text-white;
 }
 
 body.dark-mode nav {
@@ -21,8 +24,8 @@ body.dark-mode nav {
   color: white;
 }
 
-body.dark-mode nav a {
-  color: white;
+body.dark-mode nav a svg{
+  fill: white;
 }
 
 body.dark-mode nav button {
