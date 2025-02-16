@@ -1,23 +1,39 @@
-<nav class="bg-[#0F0F11] p-4 fixed w-full z-10 top-0"> 
-  <ul class="flex justify-around text-white">
-    <li><a href="#home" class="hover:underline"></a>Home</li>
-    <li><a href="#about" class="hover:underline"></a>About me</li>
-    <li><a href="#skills" class="hover:underline"></a>Skills</li>
-    <li><a href="#contact" class="hover:underline"></a>Contact</li>
+<nav class="bg-gray-100 p-4 fixed left-0 top-0 w-32 h-full z-10 flex flex-col justify-start text-black">
+  <ul class="flex flex-col flex-grow justify-evenly text-center">
+    <li><a href="#home" class="hover:underline block py-4">Home</a></li>
+    <li><a href="#about" class="hover:underline block py-4">About me</a></li>
+    <li><a href="#skills" class="hover:underline block py-4">Skills</a></li>
+    <li><a href="#contact" class="hover:underline block py-4">Contact</a></li>
   </ul>
+
+  <button (click)="toggleTheme()" class="mx-auto mb-4 p-2 rounded bg-gray-700 text-white">
+    {{ isDarkMode ? '🌙' : '☀️' }}
+  </button>
+  
+  <div class="flex justify-center space-x-4 pb-4">
+    <a href="https://github.com/tuperfil" target="_blank">
+      <img src="https://cdn.simpleicons.org/github/ffffff" class="w-6 h-6">
+    </a>
+    <a href="https://twitter.com/tuperfil" target="_blank">
+      <img src="https://cdn.simpleicons.org/twitter/ffffff" class="w-6 h-6">
+    </a>
+    <a href="https://linkedin.com/in/tuperfil" target="_blank">
+      <img src="https://cdn.simpleicons.org/linkedin/ffffff" class="w-6 h-6">
+    </a>
+  </div>
 </nav>
 
-<main class="mt-20">
+<main class="ml-32 mt-4 transition-colors duration-300">
   <section id="home" class="min-h-screen p-4">
-  <app-home></app-home>
+    <app-home></app-home>
   </section>
   <section id="about" class="min-h-screen p-4">
-  <app-about></app-about>
+    <app-about></app-about>
   </section>
   <section id="skills" class="min-h-screen p-4">
-  <app-skills></app-skills>
+    <app-skills></app-skills>
   </section>
   <section id="contact" class="min-h-screen p-4">
-  <app-contact></app-contact>
+    <app-contact></app-contact>
   </section>
 </main>

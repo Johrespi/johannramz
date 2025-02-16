@@ -1,6 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
 
-html{
+
+html {
     scroll-behavior: smooth;
-}
+  }
+  
+  body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 300ms, color 300ms;
+  }
+  
+  /* Estilos para modo oscuro cuando se añade la clase "dark-mode" al body */
+  body.dark-mode {
+    background-color: #1a202c;  /* o el color que prefieras */
+    color: #ffffff;
+  }
