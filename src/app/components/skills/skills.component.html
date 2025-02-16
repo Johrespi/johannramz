@@ -3,7 +3,24 @@
     <p class="mt-2 text-center">I have used these technologies throughout my career</p>
 </div>
 
-<div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8 justify-items-center">
+<div class="grid grid-cols-1 md:grid-cols2 lg:grid-cols-3 gap-6 p-4">
+    @for (category of categories; track category){
+        <div class="bg-gray-100 rounded-lg shadow-md p-4">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">{{category.title}}</h2>
+            <div class="flex flex-wrap gap-4 justify-center">
+                @for( tech of category.techs; track tech){
+                  <div class="flex flex-col items-center">
+                    <img [src]="tech.svg" [alt]="tech.name" class="w-12 h-12 transition-transform durantion-300 transform hover:scale-110"
+                    [style.filter]="'invert(0%) sepia(0%) saturate(1%) hue-rotate(0deg) brightness(100%) contrast(100%)'"
+                    (mouseover)="onHoverIn($event)"
+                    (mouseout)="onHoverOut($event)"
+                    > 
+                    <span class="text-sm text-gray-700">{{tech.name}}</span>
+                  </div>  
+                }
 
-    
+            </div>
+
+        </div>
+    }
 </div>

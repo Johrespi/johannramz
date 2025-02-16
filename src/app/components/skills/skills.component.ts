@@ -10,7 +10,7 @@ export class SkillsComponent {
 
   categories = [
     {
-      title: 'Lenguajes de Programación',
+      title: 'Programming Languages',
       techs: [
         { name: 'Ruby', color:'#CC342D', svg: 'https://cdn.simpleicons.org/ruby'},
         { name: 'JavaScript', color: '#F7DF1E', svg: 'https://cdn.simpleicons.org/javascript' },
@@ -20,7 +20,7 @@ export class SkillsComponent {
       ]
     },
     {
-      title: 'Frameworks y Librerías',
+      title: 'Frameworks and Libraries',
       techs: [
         { name: 'Angular', color: '#DD0031', svg: 'https://cdn.simpleicons.org/angular' },
         { name: 'Ruby on Rails', color: '#D30001', svg: 'https://cdn.simpleicons.org/rubyonrails' },
@@ -28,7 +28,7 @@ export class SkillsComponent {
       ]
     },
     {
-      title: 'Bases de Datos',
+      title: 'Databases',
       techs: [
         { name: 'MySQL', color: '#4479A1', svg: 'https://cdn.simpleicons.org/mysql' },
         { name: 'PostgreSQL', color: '#336791', svg: 'https://cdn.simpleicons.org/postgresql' },
@@ -36,11 +36,19 @@ export class SkillsComponent {
       ]
     },
     {
-      title: 'Herramientas y DevOps',
+      title: 'Tools and DevOps',
       techs: [
         { name: 'Git', color: '#F05032', svg: 'https://cdn.simpleicons.org/git' },
         { name: 'GitHub', color: '#181717', svg: 'https://cdn.simpleicons.org/github' }
       ]
     }
   ]
+
+  onHoverIn(event: any) {
+    event.target.style.filter = 'invert(50%) sepia(100%) saturate(2000%) hue-rotate(180deg) brightness(100%) contrast(100%)';
+  }
+
+  onHoverOut(event: any) {
+    event.target.style.filter = 'invert(0%) sepia(0%) saturate(1%) hue-rotate(0deg) brightness(100%) contrast(100%)';
+  }
 }
