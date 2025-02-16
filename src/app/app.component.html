@@ -1,4 +1,4 @@
-<nav class="bg-gray-100 p-4 fixed left-0 top-0 w-32 h-full z-10 flex flex-col justify-start text-black">
+<nav class="bg-white p-4 fixed left-0 top-0 w-32 h-full z-10 flex flex-col justify-start text-black border-r-2 border-blue-300">
   <ul class="flex flex-col flex-grow justify-evenly text-center">
     <li><a href="#home" class="hover:underline block py-4">Home</a></li>
     <li><a href="#about" class="hover:underline block py-4">About me</a></li>
@@ -6,7 +6,7 @@
     <li><a href="#contact" class="hover:underline block py-4">Contact</a></li>
   </ul>
 
-  <button (click)="toggleTheme()" class="mx-auto mb-4 p-2 rounded bg-gray-700 text-white">
+  <button (click)="toggleTheme()" class="mx-auto mb-4 p-2 rounded bg-white text-white border-3 border-blue-300">
     {{ isDarkMode ? '🌙' : '☀️' }}
   </button>
   
