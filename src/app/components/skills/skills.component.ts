@@ -22,9 +22,10 @@ export class SkillsComponent {
     {
       title: 'Frameworks and Libraries',
       techs: [
-        { name: 'Angular', color: '#DD0031', svg: 'https://cdn.simpleicons.org/angular' },
+        { name: 'Angular', color: '#E125B3', svg: 'https://cdn.simpleicons.org/angular/c3002f' },
         { name: 'Ruby on Rails', color: '#D30001', svg: 'https://cdn.simpleicons.org/rubyonrails' },
-        { name: 'React', color: '#61DAFB', svg: 'https://cdn.simpleicons.org/react' }
+        { name: 'React', color: '#61DAFB', svg: 'https://cdn.simpleicons.org/react' },
+        { name: 'Ionic', color: '#3880FF', svg: 'https://cdn.simpleicons.org/ionic' }
       ]
     },
     {
@@ -39,16 +40,20 @@ export class SkillsComponent {
       title: 'Tools and DevOps',
       techs: [
         { name: 'Git', color: '#F05032', svg: 'https://cdn.simpleicons.org/git' },
-        { name: 'GitHub', color: '#181717', svg: 'https://cdn.simpleicons.org/github' }
+        { name: 'GitHub', color: '#181717', svg: 'https://cdn.simpleicons.org/github' },
+        { name: 'Linux', color: '#E95420', svg: 'https://cdn.simpleicons.org/linux/black' },
+        { name: 'Ubuntu', color: '#00A4EF', svg: 'https://cdn.simpleicons.org/ubuntu' }
       ]
     }
   ]
 
-  onHoverIn(event: any) {
-    event.target.style.filter = 'invert(50%) sepia(100%) saturate(2000%) hue-rotate(180deg) brightness(100%) contrast(100%)';
+  onHoverIn(event: any, color: string) {
+    event.target.style.filter = 'none';
+    event.target.style.fill = color;
   }
 
   onHoverOut(event: any) {
-    event.target.style.filter = 'invert(0%) sepia(0%) saturate(1%) hue-rotate(0deg) brightness(100%) contrast(100%)';
+    event.target.style.fill = 'gray';  
+    event.target.style.filter = 'grayscale(100%)';  
   }
 }
