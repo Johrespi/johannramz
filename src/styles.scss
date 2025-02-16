@@ -7,10 +7,11 @@ html{
 }
 
 body {
-    @apply bg-white text-black;
+    background-color: #ffffff;
+    color: #000000;
   }
   
-  /* Estilos para modo oscuro cuando se añade la clase "dark-mode" al body */
-body.dark-mode {
-    @apply bg-gray-800 text-white;
-}
+  body.dark-mode {
+    background-color: #0F0F11;
+    color: white;
+  }
