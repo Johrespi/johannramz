@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         'custom-dark': '#0F0F11',
       },
+      fontFamily: {
+        custom: ['Inter', 'sans-serif'],
+      },
     },
   },
   plugins: [],
