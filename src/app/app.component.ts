@@ -4,11 +4,12 @@ import { HomeComponent } from "./components/home/home.component";
 import { SkillsComponent } from './components/skills/skills.component';
 import { ContactComponent } from './components/contact/contact.component'; 
 import { AboutComponent } from './components/about/about.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HomeComponent, SkillsComponent, ContactComponent, AboutComponent],
+  imports: [RouterOutlet, HomeComponent, SkillsComponent, ContactComponent, AboutComponent, ProjectsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
