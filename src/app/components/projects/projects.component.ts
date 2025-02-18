@@ -12,7 +12,7 @@ export class ProjectsComponent {
     {
       id: 1,
       title: 'Educational Platform For Kids',
-      image: 'assets/explora-k5.png',
+      image: 'assets/explorak5.png',
       description: 'The Explora K5 platform is a web application that allows children to learn through interactive activities. The platform is designed to be used by children under 8 years old. It uses the Canvas LMS code base and is customized to meet the needs of the target audience. My contribution was to reconstruct the Modules section, which is the main feature that allows the student to access the course content. The repository is private, but you can view the Canvas LMS repository for reference.',
       url: 'https://github.com/instructure/canvas-lms',
       techs: [
