@@ -13,7 +13,7 @@ export class ProjectsComponent {
       id: 1,
       title: 'Educational Platform For Kids',
       image: 'assets/explorak5.png',
-      description: 'The Explora K5 platform is a web application that allows children to learn through interactive activities. The platform is designed to be used by children under 8 years old. It uses the Canvas LMS code base and is customized to meet the needs of the target audience. My contribution was to reconstruct the Modules section, which is the main feature that allows the student to access the course content. The repository is private, but you can view the Canvas LMS repository for reference.',
+      description: 'The Explora K5 platform is a web application that allows children to learn through interactive activities. The platform is designed to be used by children under 8 years old. It uses the Canvas LMS code base and is customized to meet the needs of the target audience. My contribution was to redesign the view of the Modules section, which is the main feature that allows the student to access the course content. The repository is private, but you can view the Canvas LMS repository for reference.',
       url: 'https://github.com/instructure/canvas-lms',
       techs: [
         { name: 'Ruby on Rails', svg: 'https://cdn.simpleicons.org/rubyonrails' },
@@ -41,8 +41,6 @@ export class ProjectsComponent {
       url: 'https://github.com/Johrespi/proyecto-os',
       techs: [
         { name: 'C', svg: 'https://cdn.simpleicons.org/c' },
-        { name: 'PostgreSQL', svg: 'https://cdn.simpleicons.org/postgresql'},
-        { name: 'React', svg: 'https://cdn.simpleicons.org/react' },
       ]
     },
     {
@@ -58,10 +56,10 @@ export class ProjectsComponent {
     },
     {
       id: 5,
-      title: 'Dashboard',
+      title: 'Guayaquil Weather',
       image: 'assets/dashboard.png',
-      description: 'This project is a platform that allows users to create and join communities and attend to events within these communities.',
-      url: 'https://github.com/Johrespi/dashboard',
+      description: 'This project is a dashboard that provides real-time weather updates for Guayaquil, Ecuador. It integrates up-to-date meteorological data and intuitive charts for enhanced visualization.',
+      url: 'https://johrespi.github.io/dashboard/',
       techs: [
         { name: 'React', svg: 'https://cdn.simpleicons.org/react' },
         { name: 'TypeScript',svg: 'https://cdn.simpleicons.org/typescript' },

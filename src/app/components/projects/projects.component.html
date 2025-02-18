@@ -4,12 +4,20 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8 p-4"> 
         @for(project of projects; track project.id){
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="bg-gray-100 shadow-lg rounded-lg overflow-hidden">
                 <img src="{{ project.image }}" alt="{{ project.title }}" class="w-full max-h-64 object-cover object-center border-b-2 border-blue-300">
-                <div class="p-4">
+                <div class="p-4 text-center  ">
                     <h3 class="text-center font-semibold text-lg text-black">{{ project.title}}</h3>
-                    <p class="mt-2 text-justify text-gray-500">{{ project.description }}</p>
-                    <a href="{{ project.url }}" target="_blank" class="block mt-4 text-blue-500 hover:underline">View project</a>
+                    <p class="min-h-[200px] mt-2 text-justify text-gray-500">{{ project.description }}</p>
+                    <h3 class="text-center font-semibold text-lg text-black"> Technologies </h3>
+                    <div class=" -mx-4 flex justify-center items-center mt-2 gap-6 h-15">
+                    @for(tech of project.techs; track tech){
+                        <img [src]="tech.svg" [alt]="tech.name" class=" h-12 transition-transform durantion-300 transform hover:scale-110">
+                    }
+                    </div>
+                    <a href="{{ project.url }}" target="_blank" class="block rounded w-30 mt-6 mx-auto px-4 py-2 bg-blue-500 hover:bg-red-500">
+                        View
+                    </a>
                 </div>
             </div>
         }
