@@ -1,4 +1,4 @@
-<nav class="bg-white p-4 fixed left-0 top-0 w-32 h-full z-10 flex flex-col justify-start text-black border-r-2 border-blue-300">
+<nav class="bg-white p-4 fixed left-0 top-0 w-24 md:w-32 h-full max-h-screen overflow-y-auto z-10 flex flex-col justify-start text-black border-r-2 border-blue-300">
   <ul class="flex flex-col text-center ">
     <li>
       <a href="#home" class="hover:underline block py-6 flex flex-col items-center ">
@@ -44,13 +44,13 @@
     </a>
   </div>
 
-  <button (click)="toggleTheme()" class="mx-auto my-16 p-2 rounded bg-white text-white border-3 border-blue-300">
+  <button (click)="toggleTheme()" class="mx-auto my-16 p-2 rounded bg-white text-white border-3 border-blue-300 bg-blue">
     {{ isDarkMode ? '🌙' : '☀️' }}
   </button>
 
 </nav>
 
-<main class="ml-32 mt-4">
+<main class="ml-24 md:ml-32 mt-4">
   <section id="home" class="min-h-[500px] p-4">
     <app-home></app-home>
   </section>
