@@ -6,15 +6,17 @@ import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { isPlatformBrowser } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HomeComponent, SkillsComponent, ContactComponent, AboutComponent, ProjectsComponent],
+  imports: [RouterOutlet, HomeComponent, SkillsComponent, ContactComponent, AboutComponent, ProjectsComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
   isDarkMode: boolean = true;
+  isNavbarCollapsed: boolean = false;
   title = 'portfolio';
 
   constructor(
@@ -44,5 +46,9 @@ export class AppComponent implements OnInit {
       this.renderer.removeClass(document.body, 'dark-mode');
       localStorage.setItem('theme', 'light');
     }
+  }
+
+  toggleNavbar() {
+    this.isNavbarCollapsed = !this.isNavbarCollapsed;
   }
 }

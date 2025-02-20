@@ -18,7 +18,8 @@ body {
 body nav a svg{
   fill: black;
 }
-  
+
+
 body.dark-mode {
   @apply bg-[#0F0F11] text-white;
 }
@@ -26,6 +27,10 @@ body.dark-mode {
 body.dark-mode nav {
   background-color: #0F0F11;
   color: oklch(70.9% .015 304.04);
+}
+
+body.dark-mode nav ul button {
+  @apply text-[#a39fa9];
 }
 
 body.dark-mode nav a svg{
