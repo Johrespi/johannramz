@@ -16,7 +16,7 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent implements OnInit {
   isDarkMode: boolean = true;
-  isNavbarCollapsed: boolean = false;
+  isNavbarCollapsed: boolean = true;
   title = 'portfolio';
 
   constructor(
